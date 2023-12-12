@@ -30,6 +30,7 @@
          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
          max-width: 400px;
          width: 100%;
+         background-color: white;
       }
 
       .form-heading {
@@ -39,11 +40,13 @@
 
       .input-field {
          margin-bottom: 10px;
+         width: 93.5%;
       }
 
       .input-label {
          font-size: 16px;
          font-weight: 500;
+         padding-bottom: 0.3rem;
       }
 
       .input {
@@ -61,7 +64,6 @@
          border-radius: 4px;
          font-weight: bold;
          cursor: pointer;
-         
       }
 
       .submit-button:hover {
@@ -74,49 +76,62 @@
 
    <body class="center">
       <div class="form-container">
-         <h2 class="form-heading">CROP RECOMENDATION</h2>
+         <h2 class="form-heading">River Water Quality Forecasting</h2>
 
          <form action="/predict" method="post">
             <div class="input-field">
-               <label for="nitrogen" class="input-label" >Nitrogen:</label>
+               <div class="input-label">
+                  <label for="nitrogen">Nitrogen:</label>
+               </div>
                <input type="text" name="nitrogen" required class="input" placeholder="Enter Nitrogen value">
             </div>
 
             <div class="input-field">
-               <label for="phosphourus" class="input-label">Phosphorus:</label>
-               <input type="text" name="phosphorus" required class="input" placeholder="Enter phosphorus value">
+               <div class="input-label">
+                  <label for="phosphourus">Phosphorus:</label>
+               </div>
+               <input type="text" name="phosphourus" required class="input" placeholder="Enter phosphorus value">
             </div>
 
             <div class="input-field">
-               <label for="potassium" class="input-label">Potassium:</label>
+               <div class="input-label">
+                  <label for="potassium">Potassium:</label>
+               </div>
                <input type="text" name="potassium" class="input" placeholder="Enter potassium value">
             </div>
 
             <div class="input-field">
-               <label for="temperature" class="input-label">Temperature:</label>
+               <div class="input-label">
+                  <label for="temperature">Temperature:</label>
+               </div>
                <input type="text" name="temperature" required class="input" placeholder="Enter temperature value">
             </div>
 
             <div class="input-field">
-               <label for="humidity" class="input-label">Humidity:</label>
+               <div class="input-label">
+                  <label for="humidity">Humidity:</label>
+               </div>
                <input type="text" name="humidity" required class="input" placeholder="Enter humidity value">
             </div>
 
             <div class="input-field">
-               <label for="ph" class="input-label">pH:</label>
+               <div class="input-label">
+                  <label for="ph">pH:</label>
+               </div>
                <input type="text" name="ph" required class="input" placeholder="Enter pH value">
             </div>
 
             <div class="input-field">
-               <label for="rainfall" class="input-label">Rainfall:</label>
+               <div class="input-label">
+                  <label for="rainfall">Rainfall:</label>
+               </div>
                <input type="text" name="rainfall" required class="input" placeholder="Enter rainfall">
             </div>
 
             <div class="button-container">
                <button type="submit" class="submit-button">Predict</button>
             </div>
-        </form>
-    </div>
+         </form>
+   </div>
 </body>
-
 
